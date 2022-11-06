@@ -1,0 +1,14 @@
+{
+  "name": "npm.json",
+  "version": "1.0.0",
+  "description": "asa",
+  "main": "script.js",
+  "scripts": {
+    "test": "set"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "swup": "^2.0.19"
+  }
+}
