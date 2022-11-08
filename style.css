@@ -238,6 +238,10 @@ p.p2 {
     top: 580px;
 }
 
+video {
+    border-radius: 20px;
+}
+
 /* animation */
 
 .transition-button {
