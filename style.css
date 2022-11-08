@@ -3,7 +3,7 @@ html {
 }
 
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 98;
     overflow: auto;
     width: 90%;
@@ -79,6 +79,8 @@ li a:hover {
     border-radius: 10px;
     box-sizing: border-box;
 }
+
+/* Main Page */
 
 #IntroductionBackground {
 	position: relative;
@@ -239,7 +241,40 @@ p.p2 {
 }
 
 video {
-    border-radius: 20px;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+/*Enterprise*/
+
+.OverlayTopTwo{
+    color: white;
+    font-size: 120%;
+    font-family: "MuseoModerno";
+    position: relative;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: -70%;
+    z-index: 1;
+    left: 50%;
+    height: 200px;
+    border-radius: 50px;
+    width: 50%;
+}
+
+.OverlayTopTwo p {
+    font-family: "Bitter";
+    margin-left: 20px;
+}
+
+.OverlayTopTwo h1 {
+    margin-bottom: -20px;   
+    margin-left: 20px;
+    font-size: 150%;
+}
+
+.OverlayTopTwo .button {
+    margin-left: 20px;
 }
 
 /* animation */
