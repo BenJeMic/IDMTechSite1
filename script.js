@@ -31,3 +31,10 @@ function clickFunction(select) {
         document.getElementById('b630').className = 'button active'
     }
 }
+
+
+const body = document.querySelector('#htmlhtml');
+
+const tl = new TimelineMax();
+
+tl.fromTo(body, 1.2, { transform: 'translateX(-100%)', opacity: '0' }, { transform: 'translateX(0%)', opacity: '1', ease: Power2.easeOut }, "+=1")
