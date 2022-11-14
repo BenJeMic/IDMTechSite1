@@ -116,9 +116,9 @@
     Username : "idmsmtp50@zohomail.com",
     Password : "6958AE5FBB30ABBA515B4F8066F41297D6F8",
     To : 'FionaSherleen2005@outlook.com',
-    From : document.getElementById('email').value,
+    From : 'benedici03b@gmail.com',
     Subject : 'Web Email from ' + document.getElementById('name').value,
-    Body : document.getElementById('message').value,
+    Body : document.getElementById('message').value + document.getElementById('email').value
 }).then(
   message => alert(message)
 );
