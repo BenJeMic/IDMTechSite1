@@ -33,8 +33,22 @@ function clickFunction(select) {
 }
 
 
+
 const body = document.querySelector('#htmlhtml');
 
 const tl = new TimelineMax();
 
 tl.fromTo(body, 1.2, { transform: 'translateX(-100%)', opacity: '0' }, { transform: 'translateX(0%)', opacity: '1', ease: Power2.easeOut }, "+=1")
+
+function clicFunction(selected, psel) {
+    var selfx = document.getElementById(selected)
+    var selpa = document.getElementById(psel)
+
+    if (selfx.style.display === 'none') {
+        selfx.style.display = 'block';
+        selpa.style.setProperty('--plusminus-background', 'url(./MinusIcon.png)')
+    } else {
+        selfx.style.display = 'none'
+        selpa.style.setProperty('--plusminus-background', 'url(./PlusIcon.png)')
+    }
+}

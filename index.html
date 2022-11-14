@@ -49,14 +49,17 @@
               <img class="FXCIMGCRL" src="./FXC 830.png">
               <p>FXC 830 | 240$</p>
               <a href="google.com">Buy</a>
+              <a class="button fxcs" href="https://www.tokopedia.com/benpcshop/vga-idm-fxc-830-6gb">Buy</a>
             </section>
             <section id="F730" class="glow-button fxcs" style="transition: 0.6s; opacity: 0">
               <img class="FXCIMGCRL" src="./FXC 730.png">
               <p>FXC 730 | 160$</p>
+              <a class="button fxcs" href="https://www.tokopedia.com/benpcshop/vga-idm-fxc-730-6gb">Buy</a>
             </section>
             <section id="F630" class="glow-button fxcs" style="transition: 0.6s; opacity: 0">
               <img class="FXCIMGCRL" src="./FXC 630.png">
               <p>FXC 630 | 100$</p>
+              <a class="button fxcs" href="https://www.tokopedia.com/benpcshop/vga-idm-fxc-630-6gb">Buy</a>
             </section>
           </section>
 
@@ -70,8 +73,8 @@
             
           </article>
           </main>
-          <section id="form">
-            <form>
+          <section class="transition-main" id="form">
+            <form onsubmit="sendEmail(); reset(); return false;">
               <div>
               <label for="name">Name</label><br>
               <input type="text" id="name" name="fname"><br>
@@ -84,12 +87,14 @@
               </div>
               <input type="submit" value="Send">
             </form>
-            <p id="contact">Contact Us!<br>
+            <div id="contact">
+            <p>Contact Us!<br>
               <span>Tell us what you think!</span>
             </p>
+            </div>
           </section>
 
-          <footer> <!-- Tag Foooter -->
+          <footer class="transition-main"> <!-- Tag Foooter -->
             <div style="top: 10px; position: relative;" id="Footer Text">
               <img id="FooterIcon" src="https://cdn.discordapp.com/attachments/997293511206502452/1027799189549240330/Screenshot_1.png" />
               <h1 id="FooterIDM">IDM | <span style="font-size: 50%;">&#x00A9;IDM Corporation</span></h1>
@@ -102,6 +107,22 @@
           that do not cause or contribute to a violation of an internationally recognized human right.</p></aside>
           </footer>
         </div>
-      </div>  
+      </div> 
+      <script src="https://smtpjs.com/v3/smtp.js"></script> 
+      <script>
+        function sendEmail() {
+          Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "idmsmtp50@zohomail.com",
+    Password : "6958AE5FBB30ABBA515B4F8066F41297D6F8",
+    To : 'FionaSherleen2005@outlook.com',
+    From : document.getElementById('email').value,
+    Subject : 'Web Email from ' + document.getElementById('name').value,
+    Body : document.getElementById('message').value,
+}).then(
+  message => alert(message)
+);
+        }
+      </script>
     </body>
 </html>
