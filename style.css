@@ -96,12 +96,17 @@ li a:hover {
 .OverlayTopOne {
     color: white;
     font-size: 200%;
+    opacity: 100%;
     font-family: "MuseoModerno";
     position: relative;
     text-align: center;
     margin: auto;
     margin-top: -70%;
     z-index: 1;
+}
+
+.TH1, .TP1, .TA1 {
+    opacity: 0;
 }
 
 .OverlayTopOne p, .button {
@@ -384,11 +389,12 @@ footer.ent {
 
 article.ent {
     height: 1000px;
-    margin-bottom: 20px;
+    margin-bottom: -80px;
 }
 
 .OverlayTopTwo{
     color: white;
+    overflow: hidden;
     font-size: 120%;
     font-family: "MuseoModerno";
     position: relative;
@@ -399,7 +405,6 @@ article.ent {
     left: 50%;
     height: 200px;
     border-radius: 50px;
-    width: 50%;
 }
 
 .OverlayTopTwo p {
@@ -422,15 +427,48 @@ article.ent {
 footer {
 	box-sizing: border-box;
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(96,96,96,0.8) 40%);
-	overflow: auto;
+	overflow: hidden;
     padding: 0px 50px;
     position: relative;
     top: 50px;
     margin: auto;
     border-radius: 20px;
     width: 95%;
-	height: 240px;
+	height: 280px;
 	z-index: 99;
+}
+
+footer section {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: grid;
+    padding: 5px;
+    border-radius: 20px;
+    grid-template-columns: 190px 1fr;
+    grid-template-rows: 60% 40%;
+    align-content: center;
+    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(119,119,119,0.8) 40%);
+}
+
+.linus {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+footer section p {
+    padding-left: 10px;
+    align-content: center;
+    margin-top: -2px;
+    max-height: 100%;
+}
+
+#legal {
+    font-size: 60%;
 }
 
 #FooterIcon {
@@ -524,4 +562,35 @@ html.is-animating .transition-main {
 html.is-leaving .transition-main {
     opacity: 0;
     transform: translateX(500px)
+}
+
+.transition-toptwo {
+    left: 50%;
+    opacity: 1;
+    transition: 1s;
+}
+
+html.is-animating .transition-toptwo {
+    left: 70%; 
+}
+
+.transition-two {
+    left: 0%;
+    transition: 1s;
+    opacity: 1;
+}
+
+html.is-animating .transition-two {
+    left: 20%;
+    opacity: 0;
+}
+
+.blink {
+    animation: blink 2s infinite
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0%;
+    }
 }

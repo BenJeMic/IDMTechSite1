@@ -34,11 +34,17 @@ function clickFunction(select) {
 
 
 
-const body = document.querySelector('#htmlhtml');
+const body = document.querySelector('#htmlhtm');
+const h1a = document.querySelectorAll('.TH1')
+const para = document.querySelectorAll('.TP1')
+const anc = document.querySelectorAll('.TA1, .driverLists')
 
 const tl = new TimelineMax();
 
 tl.fromTo(body, 1.2, { transform: 'translateX(-100%)', opacity: '0' }, { transform: 'translateX(0%)', opacity: '1', ease: Power2.easeOut }, "+=1")
+tl.fromTo(h1a, 1, { transform: 'translateX(20%)', opacity: '0%' }, { transform: 'translateX(0%)', opacity: '1', ease: Power2.easeOut } )
+tl.fromTo(para, 1, { transform: 'translateX(-20%)', opacity: '0%' }, { transform: 'translateX(0%)', opacity: '1', ease: Power2.easeOut }, "-=1" )
+tl.fromTo(anc, 0.5, { opacity: '0%' }, { opacity: '1', ease: Power2.easeOut }, "-=1" );
 
 function clicFunction(selected, psel) {
     var selfx = document.getElementById(selected)
