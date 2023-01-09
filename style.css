@@ -431,7 +431,7 @@ footer {
 	overflow: hidden;
     padding: 0px 50px;
     position: relative;
-    top: 50px;
+    top: 25px;
     margin: auto;
     border-radius: 20px;
     width: 95%;
@@ -552,6 +552,7 @@ html.is-leaving .transition-button {
 
 #htmlhtml {
     overflow: hidden;
+    padding-bottom: 30px;
 }
 
 .transition-main {
