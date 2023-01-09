@@ -455,6 +455,7 @@ footer section {
 .linus {
     height: 100%;
     background-size: cover;
+    background-image: url('./Linus.jpg');
     background-position: center;
     border-radius: 50%;
     grid-row-start: 1;
@@ -547,6 +548,10 @@ html.is-animating .transition-button {
 html.is-leaving .transition-button {
     background-color: rgba(0, 128, 0, 0)
 
+}
+
+#htmlhtml {
+    overflow: hidden;
 }
 
 .transition-main {
