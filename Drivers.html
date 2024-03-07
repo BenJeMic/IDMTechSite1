@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IDM Technologies</title>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <link rel="icon" href="./icon.png">
+        <link href="https://fonts.googleapis.com/css?family=MuseoModerno" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter: 400|Bitter:400" rel="stylesheet">
+        <script src="./swup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script defer src="./script.js"></script>
+    </head>
+
+    <body class="body" style="opacity: 0; transition: 2s">
+        <div id="swup">
+          <!--Top Navi Bar-->
+          <header id="animate">
+              <img class="brand" src="./icon.png">
+                <h1 class="brand">IDM Technologies</h1>
+              <b><ul>
+              <li><a href="/index.html">Home</a></li>    
+              <li><a class="transition-button" href="/Drivers.html">Driver</a></li>
+              <li><a href="/Enterprise.html">Enterprise</a></li>
+              </ul></b>
+          </header>
+      
+      <div id="htmlhtml">
+          <!--Main Page-->
+          <main class="transition-main">
+            <img id="IntroductionBackground" src="./RTG 1410.png" />
+              <div class="OverlayTopOne transition-two">
+                <h1>Drivers & Software</h1>
+                <a href="javascript:" class="button glow-button" style="color:white; text-decoration: none; font-size: 90%;">Select</a>
+              </div><br><br><br>
+            
+            <!-- Selection -->
+            <section class="driverLists">
+                <h4>Driver List for FXC</h4>
+                <div style="color: white;" class="DFXC">
+                    <p id="p11" onclick="clicFunction('FXC11','p11')">Windows 11</p><hr>
+                    <div id="FXC11" class="dropdownListFXC">
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Optional 1.42</a><br>
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Recommended 1.4</a>
+                    </div>
+                    <p id="p10" onclick="clicFunction('FXC10', 'p10')">Windows 10</p><hr>
+                    <div id="FXC10" class="dropdownListFXC">
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Optional 1.32</a><br>
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Recommended 1.3</a>
+                    </div>
+                </div>
+                <h4>Driver List for RTG</h4>
+                <div style="color: white;" class="DFXC">
+                    <p id="p9" onclick="clicFunction('FXC9','p9')">Windows 11</p><hr>
+                    <div id="FXC9" class="dropdownListFXC">
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Optional 1.42</a><br>
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Recommended 1.4</a>
+                    </div>
+                    <p id="p8" onclick="clicFunction('FXC8', 'p8')">Windows 10</p><hr>
+                    <div id="FXC8" class="dropdownListFXC">
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Optional 1.32</a><br>
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Recommended 1.3</a>
+                    </div>
+                </div>
+                <h4>Driver List for HEP</h4>
+                <div style="color: white;" class="DFXC">
+                    <p id="p7" onclick="clicFunction('FXC7','p7')">Windows 11</p><hr>
+                    <div id="FXC7" class="dropdownListFXC">
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Optional 1.42</a><br>
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Recommended 1.4</a>
+                    </div>
+                    <p id="p6" onclick="clicFunction('FXC6', 'p6')">Windows 10</p><hr>
+                    <div id="FXC6" class="dropdownListFXC">
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Optional 1.32</a><br>
+                        <a href="https://us.download.nvidia.com/GFE/GFEClient/3.26.0.131/GeForce_Experience_v3.26.0.131.exe">Recommended 1.3</a>
+                    </div>
+                </div>
+            </section>
+          </main>
+          <footer class="transition-main"> <!-- Tag Foooter -->
+            <div style="top: 10px; position: relative;" id="Footer Text">
+              <img id="FooterIcon" src="Icon.png" />
+              <h1 id="FooterIDM">IDM | <span style="font-size: 50%;">&#x00A9;IDM Corporation</span></h1>
+            </div>
+          <br><br><br><br><hr>
+          <section style="color: white;">
+            <div class="linus"></div>
+            <p><span style="font-size: 200%"><strong>About Me</strong></span><br>
+              My name is Linus Bartulomus Nicolas 
+            I'm 17 and I am the CEO of IDM Technologies.<br>
+            I do full-stack web development and semi-conductor manufacturing.<br><br>
+            This website's purpose is to advertise my aspiring semi-conductor business
+            and sharpen my coding skills
+          </p>
+          </section>
+          </footer>
+        </div>
+    </body>
+</html>
